@@ -1,0 +1,24 @@
+Package: BLMM
+Type: Package
+Title: Bayesian linear mixed model with multiple random effects
+Version: 0.1.0
+Authors@R: person(given = "Yang",family = "Hai",role = c("aut", "cre"),email = "y.hai@auckland.ac.nz")
+Description: Bayesian linear mixed model with multiple random-effects for risk prediction of complex traits.
+Imports:
+  MASS,
+  data.table,
+  boot,
+  BeSS,
+  matrixcalc,
+  psych,
+  kernlab,
+  HardyWeinberg,
+  stats,
+  utils,
+  BEDMatrix,
+Suggests:
+  roxygen2
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.2
