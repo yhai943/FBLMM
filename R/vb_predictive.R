@@ -191,9 +191,9 @@ vb_predictive.vb <- function(fit, epsilon = 1e-3, maf_beta = 0.5, maf_u = 0.5) {
   pred_value <- scale(beta_pred + u_pred + background_pred, T, T)
 
   m <- center
-  s <- sqrt(scale)
-
-  pred <- (drop(s) * pred_value) + m
+  s <- scale
+  
+  pred <- ( drop(s) * scale(pred_value) ) + m
 
   n_test <- length(index_test)
 
